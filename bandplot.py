@@ -46,11 +46,9 @@ def plot_vasp_band():
     plt.ylabel('$E - E_F$ (eV)', fontsize=14)
     plt.ylim(energy_range)
     plt.xlim(0, max(kcoords))
-    
-    plt.text(max(kcoords)*0.05, 1.0, f'Band Gap: 2.196 eV', 
-             fontsize=12, bbox=dict(facecolor='white', alpha=0.5))
+plt.xlim ( 0 , max ( kcoords ) )  
 
-    plt.title('$MnF_2$ Band Structure (AFM)', fontsize=16)
+    plt.title('Band Structure (AFM)', fontsize=16)
     plt.tight_layout()
     
     plt.savefig(output_image)
